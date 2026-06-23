@@ -1,6 +1,3 @@
-[![](https://jitpack.io/v/hannesa2/panoramagl.svg)](https://jitpack.io/#hannesa2/panoramagl)
-
-
 # PanoramaGL Android
 
 PanoramaGL library was the first open source library in the world to see panoramic views on Android. This is a gradle build adaptation, along with other changes and updates. 
@@ -27,19 +24,20 @@ https://github.com/user-attachments/assets/5d90deca-3b2a-4008-8368-96c209d60aa1
 
 ## Usage
 
-https://jitpack.io/#hannesa2/panoramagl
+Published to Maven Central under `io.github.suhailpatel49`.
+
 ```
 allprojects {
     repositories {
-        ...
-        maven { url 'https://jitpack.io' }
+        google()
+        mavenCentral()
     }
 }
 ```
 
 ```	
 dependencies {
-    implementation 'com.github.hannesa2:panoramagl:$latestVersion'
+    implementation 'io.github.suhailpatel49:panoramagl:1.14.1'
 }
 ```
 

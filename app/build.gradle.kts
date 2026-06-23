@@ -1,8 +1,3 @@
-import info.git.versionHelper.getGitCommitCount
-import info.git.versionHelper.getLatestGitHash
-import info.git.versionHelper.getVersionText
-import info.git.versionHelper.println
-
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -13,11 +8,10 @@ android {
     defaultConfig {
         applicationId = "com.panoramagl.sample"
         minSdk = 21
-        compileSdk = 36
-        targetSdkVersion(36)
-        versionCode = getGitCommitCount()
-        versionName = "${getVersionText()}.$versionCode"
-        println { "versionName=${versionName.green.bold} versionCode=${versionCode.green.bold}" }
+        compileSdk = 35
+        targetSdkVersion(35)
+        versionCode = 1
+        versionName = "1.14.1"
 
         compileOptions {
             sourceCompatibility = JavaVersion.VERSION_17
